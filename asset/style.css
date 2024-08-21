@@ -1,0 +1,219 @@
+/* General Styles */
+@media (max-width: 768px){}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf5f7;
+}
+
+header {
+    background-color: #f77884;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.logo img {
+        display: block;
+        max-width: 140px;
+        height: auto; 
+        margin-left: 20px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+    margin: 0 30px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    background-color: #f0f0f0;
+    border-bottom: 2px solid #000; 
+    border-radius: 1px;
+    transform: scale(1.05);
+  }
+
+/* Hero Section Animation */
+.hero {
+    background-color: #f9acb7;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    position: relative;
+    height: 20vh;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+    animation: fadeIn 2s ease-in; 
+}
+background-image: url('asset/cupcakes.jpg') 
+
+  background-size: cover;
+
+  background-position: center;   
+
+.hero img {
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    transform: translateX(-50%);
+}
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+}
+
+.hero-content {
+    margin-top: 100px;
+}
+
+.hero-text h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero-text button {
+    background-color: #ff5773;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+/* Products Section */
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Product Categories Animation */
+.product-categories {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.category {
+    text-align: center;
+    max-width: 200px;
+    animation: slideInLeft 2s ease-out; /* Slide-in from left animation */
+}
+
+.category img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.category h3 {
+    font-family: 'Brush Script MT', cursive;
+    margin-top: 10px;
+}
+
+.category p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Product Slider Animation */
+.product-slider {
+    display: flex;
+    justify-content: space-around;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 200px;
+    animation: slideInRight 2s ease-out; /* Slide-in from right animation */
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h4 {
+    font-family: 'Brush Script MT', cursive;
+    margin-top: 10px;
+}
+
+.product-card p {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f77884;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    text-align: center;
+    max-width: 200px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
